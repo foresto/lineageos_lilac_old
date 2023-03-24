@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="flamefire"
+        fetch="https://github.com/Flamefire"
+        revision="refs/tags/v17.1-20230331" />
+
+    <!-- xxx Fork of Flamefire repo: exclude fingerprint sensor files -->
+    <project path="device/sony/lilac"
+        name="foresto/android_device_sony_lilac"
+        remote="github"
+        revision="lineage-17.1-nofinger" />
+
+    <project path="device/sony/yoshino-common"
+        name="android_device_sony_yoshino-common"
+        remote="flamefire" />
+    <project path="kernel/sony/msm8998"
+        name="android_kernel_sony_msm8998"
+        remote="flamefire" />
+    <project path="vendor/sony/lilac"
+        name="android_vendor_sony_lilac"
+        remote="flamefire" />
+</manifest>
